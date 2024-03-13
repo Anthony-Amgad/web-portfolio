@@ -54,14 +54,14 @@ export class MainpageComponent implements OnInit {
     const controls = new OrbitControls(camera, renderer.domElement)
     controls.enableDamping = true
     
-    let astronaut_mixer: THREE.AnimationMixer
+    // let astronaut_mixer: THREE.AnimationMixer
     let naruto_mixer: THREE.AnimationMixer
     let pikachu_mixer: THREE.AnimationMixer
     let sans_mixer: THREE.AnimationMixer
     let spiderman_mixer: THREE.AnimationMixer
     let cdplayer_mixer: THREE.AnimationMixer
 
-    let astronaut_modelReady = false
+    // let astronaut_modelReady = false
     let zap_modelReady = false
     let jokerp5mask_modelReady = false
     let naruto_modelReady = false
@@ -69,21 +69,21 @@ export class MainpageComponent implements OnInit {
     let sans_modelReady = false
     let spiderman_modelReady = false
     let desk_modelReady = false
-    let cyberpunklaptop_modelReady = false
+    let laptop_modelReady = false
     let mouse_modelReady = false
     let pewdiepiechair_modelReady = false
     let slifer_modelReady = false
     let treehouse_modelReady = false
     let cdplayer_modelReady = false
-    let arcreactor_modelReady = false
-    let cassettetape_modelReady = false
-    let headphonestand_modelReady = false
-    let headphones_modelReady = false
-    let batarang_modelReady = false
-    let chambercard_modelReady = false
-    let khonsuskull_modelReady = false
-    let titansword_modelReady = false
-    let dominator_modelReady = false
+    // let arcreactor_modelReady = false
+    // let cassettetape_modelReady = false
+    // let headphonestand_modelReady = false
+    // let headphones_modelReady = false
+    // let batarang_modelReady = false
+    // let chambercard_modelReady = false
+    // let khonsuskull_modelReady = false
+    // let titansword_modelReady = false
+    // let dominator_modelReady = false
     
     const gltfLoader = new GLTFLoader()
     
@@ -123,28 +123,28 @@ export class MainpageComponent implements OnInit {
     let skybox = new THREE.Mesh( skyboxGeo, materialArray );
     scene.add( skybox );
     
-    gltfLoader.load(
-      "assets/glbs/astronaut.glb",
-        (gltf: GLTF) => {
-            gltf.scene.position.z += 6
-            gltf.scene.position.y -= 15.5
-            gltf.scene.position.x += 1
-            astronaut_mixer = new THREE.AnimationMixer(gltf.scene)                 
-            astronaut_mixer.clipAction(gltf.animations[2]).play()           
+    // gltfLoader.load(
+    //   "assets/glbs/astronaut.glb",
+    //     (gltf: GLTF) => {
+    //         gltf.scene.position.z += 6
+    //         gltf.scene.position.y -= 15.5
+    //         gltf.scene.position.x += 1
+    //         astronaut_mixer = new THREE.AnimationMixer(gltf.scene)                 
+    //         astronaut_mixer.clipAction(gltf.animations[2]).play()           
 
-            scene.add(gltf.scene)
+    //         scene.add(gltf.scene)
 
-            const bbox = new THREE.Box3().setFromObject(gltf.scene)
-            controls.target.x = (bbox.min.x + bbox.max.x) / 2
-            controls.target.y = ((bbox.min.y + bbox.max.y) / 2)+1
-            controls.target.z = (bbox.min.z + bbox.max.z) / 2
+    //         const bbox = new THREE.Box3().setFromObject(gltf.scene)
+    //         controls.target.x = (bbox.min.x + bbox.max.x) / 2
+    //         controls.target.y = ((bbox.min.y + bbox.max.y) / 2)+1
+    //         controls.target.z = (bbox.min.z + bbox.max.z) / 2
 
-            astronaut_modelReady = true
-        },
-        (error) => {
-            console.log(error)
-        }
-    )
+    //         astronaut_modelReady = true
+    //     },
+    //     (error) => {
+    //         console.log(error)
+    //     }
+    // )
 
     gltfLoader.load(
       "assets/glbs/zap.glb",
@@ -156,30 +156,35 @@ export class MainpageComponent implements OnInit {
 
             scene.add(gltf.scene)
             zap_modelReady = true
+
+            const bbox = new THREE.Box3().setFromObject(gltf.scene)
+            controls.target.x = (bbox.min.x + bbox.max.x) / 2
+            controls.target.y = ((bbox.min.y + bbox.max.y) / 2)+1
+            controls.target.z = (bbox.min.z + bbox.max.z) / 2
         },
         (error) => {
             console.log(error)
         }
     )
 
-    gltfLoader.load(
-      "assets/glbs/titansword.glb",
-        (gltf: GLTF) => {         
-            gltf.scene.scale.set(0.1,0.1,0.1)
-            gltf.scene.position.z += 3.25
-            gltf.scene.position.y -= 11.5
-            gltf.scene.position.x += 0
-            gltf.scene.rotation.y += 3
-            gltf.scene.rotation.z += 1
-            gltf.scene.rotation.x += 1
+    // gltfLoader.load(
+    //   "assets/glbs/titansword.glb",
+    //     (gltf: GLTF) => {         
+    //         gltf.scene.scale.set(0.1,0.1,0.1)
+    //         gltf.scene.position.z += 3.25
+    //         gltf.scene.position.y -= 11.5
+    //         gltf.scene.position.x += 0
+    //         gltf.scene.rotation.y += 3
+    //         gltf.scene.rotation.z += 1
+    //         gltf.scene.rotation.x += 1
 
-            scene.add(gltf.scene)
-            titansword_modelReady = true
-        },
-        (error) => {
-            console.log(error)
-        }
-    )
+    //         scene.add(gltf.scene)
+    //         titansword_modelReady = true
+    //     },
+    //     (error) => {
+    //         console.log(error)
+    //     }
+    // )
 
     gltfLoader.load(
       "assets/glbs/jokerp5mask.glb",
@@ -199,31 +204,31 @@ export class MainpageComponent implements OnInit {
         }
     )
 
-    gltfLoader.load(
-      "assets/glbs/dominator.glb",
-        (gltf: GLTF) => {         
-            gltf.scene.scale.set(0.002,0.002,0.002)
-            gltf.scene.position.z -= 1.5
-            gltf.scene.position.y -= 15.5
-            gltf.scene.position.x -= 5.25
-            gltf.scene.rotation.x += 1.5
+    // gltfLoader.load(
+    //   "assets/glbs/dominator.glb",
+    //     (gltf: GLTF) => {         
+    //         gltf.scene.scale.set(0.002,0.002,0.002)
+    //         gltf.scene.position.z -= 1.5
+    //         gltf.scene.position.y -= 15.5
+    //         gltf.scene.position.x -= 5.25
+    //         gltf.scene.rotation.x += 1.5
 
-            scene.add(gltf.scene)
-            dominator_modelReady = true
-        },
-        (error) => {
-            console.log(error)
-        }
-    )
+    //         scene.add(gltf.scene)
+    //         dominator_modelReady = true
+    //     },
+    //     (error) => {
+    //         console.log(error)
+    //     }
+    // )
 
     gltfLoader.load(
       "assets/glbs/desk.glb",
         (gltf: GLTF) => {         
-            gltf.scene.scale.set(2,2,2)
-            gltf.scene.position.z += 7
-            gltf.scene.position.y -= 15.5
-            gltf.scene.position.x -= 13
-            gltf.scene.rotation.y += 1
+            gltf.scene.scale.set(1,1,1.2)
+            gltf.scene.position.z += 4
+            gltf.scene.position.y -= 25.75
+            gltf.scene.position.x -= 9.75
+            gltf.scene.rotation.y += 2.75
 
             scene.add(gltf.scene)
             desk_modelReady = true
@@ -234,16 +239,16 @@ export class MainpageComponent implements OnInit {
     )
     
     gltfLoader.load(
-      "assets/glbs/cyberpunklaptop.glb",
+      "assets/glbs/laptop.glb",
         (gltf: GLTF) => {         
-            gltf.scene.scale.set(0.005,0.005,0.005)
-            gltf.scene.position.z += 7.15
-            gltf.scene.position.y -= 13.875
-            gltf.scene.position.x -= 13.15
-            gltf.scene.rotation.y += 1
+            gltf.scene.scale.set(1,1,1)
+            gltf.scene.position.z += 6.85
+            gltf.scene.position.y -= 14
+            gltf.scene.position.x -= 12.15
+            gltf.scene.rotation.y -= 14.5
 
             scene.add(gltf.scene)
-            cyberpunklaptop_modelReady = true
+            laptop_modelReady = true
         },
         (error) => {
             console.log(error)
@@ -269,123 +274,123 @@ export class MainpageComponent implements OnInit {
           }
       )
       
-      gltfLoader.load(
-          "assets/glbs/headphonestand.glb",
-            (gltf: GLTF) => {         
-              gltf.scene.scale.set(1.75,1.75,1.75)
-              gltf.scene.position.z += 5.5
-              gltf.scene.position.y -= 14.01
-              gltf.scene.position.x -= 12.5
+      // gltfLoader.load(
+      //     "assets/glbs/headphonestand.glb",
+      //       (gltf: GLTF) => {         
+      //         gltf.scene.scale.set(1.75,1.75,1.75)
+      //         gltf.scene.position.z += 5.5
+      //         gltf.scene.position.y -= 14.01
+      //         gltf.scene.position.x -= 12.5
   
-              scene.add(gltf.scene)
-              headphonestand_modelReady = true
-            },
-            (error) => {
-                console.log(error)
-            }
-        )
+      //         scene.add(gltf.scene)
+      //         headphonestand_modelReady = true
+      //       },
+      //       (error) => {
+      //           console.log(error)
+      //       }
+      //   )
         
-        gltfLoader.load(
-            "assets/glbs/headphones.glb",
-              (gltf: GLTF) => {         
-                gltf.scene.scale.set(0.01,0.01,0.01)
-                gltf.scene.position.z += 5.55
-                gltf.scene.position.y -= 13.58
-                gltf.scene.position.x -= 12.5
-                gltf.scene.rotation.x += 1.5
+        // gltfLoader.load(
+        //     "assets/glbs/headphones.glb",
+        //       (gltf: GLTF) => {         
+        //         gltf.scene.scale.set(0.01,0.01,0.01)
+        //         gltf.scene.position.z += 5.55
+        //         gltf.scene.position.y -= 13.58
+        //         gltf.scene.position.x -= 12.5
+        //         gltf.scene.rotation.x += 1.5
     
-                scene.add(gltf.scene)
-                headphones_modelReady = true
-              },
-              (error) => {
-                  console.log(error)
-              }
-          )
+        //         scene.add(gltf.scene)
+        //         headphones_modelReady = true
+        //       },
+        //       (error) => {
+        //           console.log(error)
+        //       }
+        //   )
 
-      gltfLoader.load(
-        "assets/glbs/arcreactor.glb",
-          (gltf: GLTF) => {         
-            gltf.scene.scale.set(0.5,0.5,0.5)
-            gltf.scene.position.z += 8.15
-            gltf.scene.position.y -= 14.03
-            gltf.scene.position.x -= 14.55
-            gltf.scene.rotation.y += 2
+      // gltfLoader.load(
+      //   "assets/glbs/arcreactor.glb",
+      //     (gltf: GLTF) => {         
+      //       gltf.scene.scale.set(0.5,0.5,0.5)
+      //       gltf.scene.position.z += 8.15
+      //       gltf.scene.position.y -= 14.03
+      //       gltf.scene.position.x -= 14.55
+      //       gltf.scene.rotation.y += 2
 
-            scene.add(gltf.scene)
-            arcreactor_modelReady = true
-          },
-          (error) => {
-              console.log(error)
-          }
-      )
+      //       scene.add(gltf.scene)
+      //       arcreactor_modelReady = true
+      //     },
+      //     (error) => {
+      //         console.log(error)
+      //     }
+      // )
 
-      gltfLoader.load(
-        "assets/glbs/cassettetape.glb",
-          (gltf: GLTF) => {         
-            gltf.scene.scale.set(0.05,0.05,0.05)
-            gltf.scene.position.z += 8.15
-            gltf.scene.position.y -= 14.03
-            gltf.scene.position.x -= 13.75
-            gltf.scene.rotation.y += 0.5
+      // gltfLoader.load(
+      //   "assets/glbs/cassettetape.glb",
+      //     (gltf: GLTF) => {         
+      //       gltf.scene.scale.set(0.05,0.05,0.05)
+      //       gltf.scene.position.z += 8.15
+      //       gltf.scene.position.y -= 14.03
+      //       gltf.scene.position.x -= 13.75
+      //       gltf.scene.rotation.y += 0.5
 
-            scene.add(gltf.scene)
-            cassettetape_modelReady = true
-          },
-          (error) => {
-              console.log(error)
-          }
-      )
+      //       scene.add(gltf.scene)
+      //       cassettetape_modelReady = true
+      //     },
+      //     (error) => {
+      //         console.log(error)
+      //     }
+      // )
 
-    gltfLoader.load(
-      "assets/glbs/batarang.glb",
-        (gltf: GLTF) => {         
-            gltf.scene.scale.set(0.002,0.002,0.002)
-            gltf.scene.position.y -= 8.75 
-            gltf.scene.position.x += 5.09
-            gltf.scene.position.z += 2.5
-            gltf.scene.rotation.y += 2
+    // gltfLoader.load(
+    //   "assets/glbs/batarang.glb",
+    //     (gltf: GLTF) => {         
+    //         gltf.scene.scale.set(0.002,0.002,0.002)
+    //         gltf.scene.position.y -= 8.75 
+    //         gltf.scene.position.x += 5.09
+    //         gltf.scene.position.z += 2.5
+    //         gltf.scene.rotation.y += 2
 
-            scene.add(gltf.scene)
-            batarang_modelReady = true
-        },
-        (error) => {
-            console.log(error)
-        }
-    )
+    //         scene.add(gltf.scene)
+    //         batarang_modelReady = true
+    //     },
+    //     (error) => {
+    //         console.log(error)
+    //     }
+    // )
     
-    gltfLoader.load(
-      "assets/glbs/khonsuskull.glb",
-        (gltf: GLTF) => {         
-            gltf.scene.scale.set(0.002,0.002,0.002)
-            gltf.scene.position.y -= 5.5 
-            gltf.scene.position.x += 2.5
-            gltf.scene.position.z += 5.85
+    // gltfLoader.load(
+    //   "assets/glbs/khonsuskull.glb",
+    //     (gltf: GLTF) => {         
+    //         gltf.scene.scale.set(0.002,0.002,0.002)
+    //         gltf.scene.position.y -= 5.5 
+    //         gltf.scene.position.x += 2.5
+    //         gltf.scene.position.z += 5.85
         
 
-            scene.add(gltf.scene)
-            khonsuskull_modelReady = true
-        },
-        (error) => {
-            console.log(error)
-        }
-    )
+    //         scene.add(gltf.scene)
+    //         khonsuskull_modelReady = true
+    //     },
+    //     (error) => {
+    //         console.log(error)
+    //     }
+    // )
 
-    gltfLoader.load(
-      "assets/glbs/chambercard.glb",
-        (gltf: GLTF) => {         
-            gltf.scene.scale.set(0.002,0.002,0.002)
-            gltf.scene.position.y -= 13.94 
-            gltf.scene.position.x -= 12.5
-            gltf.scene.position.z += 6
-            gltf.scene.rotation.x += 2
+    // gltfLoader.load(
+    //   "assets/glbs/chambercard.glb",
+    //     (gltf: GLTF) => {         
+    //         gltf.scene.scale.set(0.002,0.002,0.002)
+    //         gltf.scene.position.y -= 13.94 
+    //         gltf.scene.position.x -= 12.5
+    //         gltf.scene.position.z += 6
+    //         gltf.scene.rotation.x += 2
 
-            scene.add(gltf.scene)
-            chambercard_modelReady = true
-        },
-        (error) => {
-            console.log(error)
-        }
-    )
+    //         scene.add(gltf.scene)
+    //         chambercard_modelReady = true
+    //     },
+    //     (error) => {
+    //         console.log(error)
+    //     }
+    // )
 
     gltfLoader.load(
       "assets/glbs/mouse.glb",
@@ -550,22 +555,22 @@ export class MainpageComponent implements OnInit {
         requestAnimationFrame(animate)
         controls.update()
         let clockd = clock.getDelta()
-        if (astronaut_modelReady) astronaut_mixer.update(clockd)
+        // if (astronaut_modelReady) astronaut_mixer.update(clockd)
         if (naruto_modelReady) naruto_mixer.update(clockd)
         if (naruto_modelReady) animate_naruto()
         if (pikachu_modelReady) pikachu_mixer.update(clockd)
         if (sans_modelReady) sans_mixer.update(clockd)
         if (spiderman_modelReady) spiderman_mixer.update(clockd)
         if (cdplayer_modelReady) cdplayer_mixer.update(clockd)
-        if(astronaut_modelReady
-            && zap_modelReady
+        if(
+            zap_modelReady
             && jokerp5mask_modelReady
             && naruto_modelReady
             && pikachu_modelReady
             && sans_modelReady
             && spiderman_modelReady
             && desk_modelReady
-            && cyberpunklaptop_modelReady
+            && laptop_modelReady
             && mouse_modelReady
             && pewdiepiechair_modelReady
             && slifer_modelReady
