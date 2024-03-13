@@ -14,4 +14,8 @@ export class ProjectspageComponent {
     var select = <HTMLSelectElement>document.getElementById("Select");
     this.selected = select.options[select.selectedIndex].innerHTML;
   }
+
+  open(url:string){
+    window.open(url);
+  }
 }

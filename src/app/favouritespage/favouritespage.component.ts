@@ -27,4 +27,8 @@ export class FavouritespageComponent{
       content.style.height = (wrapper.clientHeight + 10) + "px";
     }
   }
+
+  open(url:string){
+    window.open(url);
+  }
 }
