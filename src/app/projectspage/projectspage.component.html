@@ -1,0 +1,537 @@
+<!-- <head>
+  <link rel="stylesheet" href="../../assets/fontawesome/css/fontawesome.css">
+</head> -->
+<body>
+    <br>
+    <h1 class="text_shadows">Projects 🔬</h1>
+    
+    <div align="center">
+      <label id="selectLabel" for="Select" class="form-label">Tool Filter Menu</label>
+      <select id="Select" class="form-select" (change)="SelectedValue()">
+        <option>Any</option>
+        <option>Python</option>
+        <option>Pytorch</option>
+        <option>TensorFlow</option>
+        <option>Scikit-learn</option>
+        <option>OpenCV</option>
+        <option>Pandas</option>
+        <option>Seaborn</option>
+        <option>Linux</option>
+        <option>C++</option>
+        <option>C#</option>
+        <option>C</option>
+        <option>QT</option>
+        <option>MongoDB</option>
+        <option>Android</option>
+        <option>Dart</option>
+        <option>Firebase</option>
+        <option>Flutter</option>
+        <option>Java</option>
+        <option>AWS</option>
+        <option>Unity</option>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+        <option>TypeScript</option>
+        <option>Bootstrap</option>
+        <option>SQL</option>
+        <option>Angular</option>
+        <option>nodejs</option>
+        <option>VHDL</option>
+      </select>
+    </div>
+    <div class="tcont">
+        <div class="timeline">
+            <div class="outer">
+              <div class="card" *ngIf="['Any','Python','Pytorch','OpenCV','Pandas','Scikit-learn',
+              'Seaborn','C++','Linux'].includes(selected)">
+                <div class="info">
+                    
+                    <h3 class="title">Football Players Tracking from Multiple Cameras using Deep Learning - Graduation Project</h3>
+                    <h4 class="subtitle">Sponsored by KoraStats</h4>
+                    <h5 class="subtitle">Sep 2023 - Present</h5>
+                    <div class="divcont">
+                      <ul>
+                        <li>Five module system that tracks football players in a match across 2-3 cameras using computer vision and deep learning</li>
+                        <li>Implemented the path predictor module using an Encoder-Decoder Network to efficiently get the trajectory of the player on the screen to predict occlusions with other players</li>
+                        <li>Integrated the 5 modules into a multithreaded system that efficiently manages memory and CPU resources</li>
+                      </ul>
+                      <button class="btn" type="button" onclick="window.open('../../assets/projects/Thesis1.pdf')">Thesis-1 Document <i class="bi bi-clipboard"></i></button>
+                    </div>
+                    <div class="logos">
+                      <!-- <a href="https://korastats.com/site/"><img src="https://korastats.com/site/themes/dashcore/assets/img/__logo/korastats.svg" height="40px"></a> <br> -->
+                      <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
+                      <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> 
+                      <a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/> </a><br>
+                      <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a>
+                      <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> 
+                      <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/> </a> <br>
+                      <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a>  
+                      <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
+                    </div>
+                </div>
+              </div>
+
+
+              <div class="card" *ngIf="['Any','Angular','Bootstrap','HTML','CSS','JavaScript','nodejs','TypeScript'].includes(selected)">
+                <div class="info">
+                    
+                    <h3 class="title">This Website :D</h3>
+                    <h5 class="subtitle">Feb 2024 - Mar 2024</h5>
+                    <br> 
+                    <div class="logos">
+                      <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="40" height="40"/> </a> 
+                      <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> 
+                      <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <br>
+                      <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> 
+                      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> 
+                      <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a><br>
+                      <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> 
+                    </div>          
+                </div>
+              </div>
+
+              <div class="card" *ngIf="['Any','Python','TensorFlow','Pandas','Scikit-learn','Seaborn'].includes(selected)">
+                <div class="info">
+                    
+                    <h3 class="title">Sentiment Analysis on Social Media Platforms using Machine and Deep Learning</h3>
+                    <h5 class="subtitle">Dec 2023 - Jan 2024</h5>
+                    
+                    <div class="divcont">
+                      <ul>
+                        <li>Compare and assess machine learning algorithms such as KNN, SVM, Naïve Bayes Classifiers, Random Forest, and Logistic Regression</li>
+                        <li>Seeing how Deep Learning algorithms perform using datasets from Twitter that are available in both Arabic and English</li>
+                        <li>Applying different feature extraction and hyperparameter optimization methods</li>
+                      </ul>
+                    </div> 
+                    <div class="logos">
+                      <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
+                      <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a>
+                      <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <br>
+                      <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a>
+                      <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/> </a> 
+                    </div>                   
+                </div>
+              </div>
+
+              <div class="card" *ngIf="['Any','Python','QT','MongoDB'].includes(selected)">
+                <div class="info">
+                    
+                    <h3 class="title">Secure Encrypted Outlook App</h3>
+                    <h5 class="subtitle">Dec 2023 - Jan 2024</h5>
+                    
+                    <div class="divcont">
+                      <ul>
+                        <li>Used PyWin32 to interact with the local Outlook App and read its inbox as well as send emails</li>
+                        <li>Encrypted emails with AES and included a Digital Signature using RSA and SHA-256</li>
+                        <li>Key shared by storing users’ public keys on MongoDB for any other users to retrieve and share AES keys securely</li>
+                      </ul>
+                      <button class="btn" type="button" onclick="window.open('https://github.com/Anthony-Amgad/Secure-Outlook')">Project Repo <i class="bi bi-github"></i></button>
+                    </div>
+                    
+                    <div class="mimgcon">
+                      <img class="mimg" src="../../assets/projects/secureoutlookarch.png" onclick="window.open('../../assets/projects/secureoutlookarch.png')">
+                    </div>
+                    
+                    <div class="logos">
+                      <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
+                      <a href="https://www.qt.io/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg" alt="qt" width="40" height="40"/> </a> 
+                      <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> 
+
+                    </div>
+                    
+                </div>
+              </div>
+
+              <div class="card" *ngIf="['Any','Android','Dart','Firebase','Flutter','Java'].includes(selected)">
+                <div class="info">
+                    
+                    <h3 class="title">University Carpool Mobile App</h3>
+                    <h5 class="subtitle">Nov 2023 - Dec 2023</h5>
+                    
+                    <div class="divcont">
+                      <ul>
+                        <li>Made both a User and a Driver app that work seamlessly in realtime together</li>
+                        <li>Integrated Google Maps API to book directly from it for ease of use</li>
+                        <li>Used local databases to check on your ride details offline</li>
+                        <li>Verified users using their university emails</li>
+                      </ul>
+                    </div>
+                    <div class="mimgcon">
+                      <video class="mvid" controls>
+                        <source src="../../assets/projects/carpoolvideo.mov">
+                        Your Browser Doesn't support html Video :(
+                      </video>
+                    </div>   
+                    <div class="logos">
+                      <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> </a>
+                      <a href="https://dart.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="40" height="40"/> </a> 
+                      <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a><br> 
+                      <a href="https://flutter.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/> </a> 
+                      <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> 
+
+                    </div>             
+                </div>
+              </div>
+
+
+              <div class="card" *ngIf="['Any','Python','AWS','MongoDB','C#','Unity','Linux'].includes(selected)">
+                <div class="info">
+                    
+                    <h3 class="title">3D Realtime Multiplayer Racing Game	</h3>
+                    <h5 class="subtitle">May 2023 - June 2023</h5>
+                    
+                    <div class="divcont">
+                      <ul>
+                        <li>Used Unity (C#) to build the client side of the connection, and built the server-side connection using Python</li>
+                        <li>Implemented 2 multithreaded servers that allow parallel rooms where each 2-4 players can join a racing game</li>
+                        <li>Created matchmaking, chat, as well as network failure handling features</li>
+                        <li>Deployed both the Python servers and MongoDB instances on EC2 AWS for reliable access</li>
+                      </ul>
+                      <button class="btn" type="button" onclick="window.open('https://github.com/Anthony-Amgad/Distributed-Project')">Project Repo <i class="bi bi-github"></i></button>
+                    </div>
+                    <div class="mimgcon">
+                      <iframe class="mvid" allowfullscreen
+                        src="https://www.youtube.com/embed/hVoL1KevE1g">
+                      </iframe>
+                    </div>   
+                    <div class="logos">
+                      <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a>
+                      <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a>
+                      <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <br>
+                      <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> 
+                      <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
+                      <a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/> </a> 
+                    </div>             
+                </div>
+              </div>
+
+              <div class="card" *ngIf="['Any','Python','TensorFlow','Pandas','Scikit-learn','Seaborn','QT','OpenCV'].includes(selected)">
+                <div class="info">
+                    
+                    <h3 class="title">Fruit Recognition Deep Learning Model</h3>
+                    <h5 class="subtitle">May 2023 - June 2023</h5>
+                    
+                    <div class="divcont">
+                      <ul>
+                        <li>Using a VGG-16 and a VGG-19 NN to classify fruits into 5 classes</li>
+                        <li>Achieving around 85% accuracy</li>
+                      </ul>
+                      <button class="btn" type="button" onclick="window.open('../../assets/projects/Fruit Recognition.pdf')">Project Document <i class="bi bi-clipboard"></i></button>
+                      <button class="btn" type="button" onclick="window.open('https://github.com/Anthony-Amgad/Fruit-Recognition-Deep-Learning')">Project Repo <i class="bi bi-github"></i></button>
+                    </div>
+                    <div class="logos">
+                      <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
+                      <a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/> </a>
+                      <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a><br>
+                      <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> 
+                      <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a>
+                      <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/> </a> <br>
+                      <a href="https://www.qt.io/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg" alt="qt" width="40" height="40"/> </a> 
+                    </div>
+                </div>
+              </div>
+
+              <div class="card" *ngIf="['Any','C'].includes(selected)">
+                <div class="info">
+                    
+                    <h3 class="title">Realtime Embedded Operating System Power Window Control</h3>
+                    <h5 class="subtitle">April 2023 - May 2023</h5>
+                    
+                    <div class="divcont">
+                      <ul>
+                        <li>Used FreeRTOS on Tiva-C to simulate a car's powered windows system</li>
+                        <li>Utilized various interupt, semaphore, and mutex based systems</li>
+                      </ul>
+                      <button class="btn" type="button" onclick="window.open('https://github.com/Anthony-Amgad/RTESProjectTeam1')">Project Repo <i class="bi bi-github"></i></button>
+                    </div>
+                    <div class="mimgcon">
+                      <img class="mimg" src="../../assets/projects/rtes.png" onclick="window.open('../../assets/projects/rtes.png')">
+                    </div> 
+                    <div class="logos">
+                      <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a>
+                    </div>               
+                </div>
+              </div>
+
+
+              <div class="card" *ngIf="['Any','Python','QT','HTML','CSS','JavaScript'].includes(selected)">
+                <div class="info">
+                    
+                    <h3 class="title">NFA to DFA & CFG to PDA Visualizer</h3>
+                    <h5 class="subtitle">April 2023 - May 2023</h5>
+                    
+                    <div class="divcont">
+                      <button class="btn" type="button" onclick="window.open('../../assets/projects/automata.pdf')">Project Document <i class="bi bi-clipboard"></i></button>
+                      <button class="btn" type="button" onclick="window.open('https://github.com/Anthony-Amgad/automataProject')">Project Repo <i class="bi bi-github"></i></button>
+                    </div>
+                    <div class="logos">
+                      <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
+                      <a href="https://www.qt.io/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg" alt="qt" width="40" height="40"/> </a> 
+                      <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <br>
+                      <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> 
+                      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> 
+                    </div>              
+                </div>
+              </div>
+
+
+              <div class="card" *ngIf="['Any','Python','OpenCV','Linux'].includes(selected)">
+                <div class="info">
+                    
+                    <h3 class="title">Mars Rover Rock Sample Picking Simulator</h3>
+                    <h5 class="subtitle">Nov 2022 - Jan 2023</h5>
+                    
+                    <div class="divcont">
+                      <ul>
+                        <li>Used Computer Vision methods to allow a simulated Mars Rover to pick up unique rock samples</li>
+                        <li>Traversed the environment with over 85% Fidelity and 95% Mapping while picking up at least 85% of the samples encountered</li>
+                      </ul>
+                      <button class="btn" type="button" onclick="window.open('../../assets/projects/CVP1.pdf')">Phase 1 Document <i class="bi bi-clipboard"></i></button>
+                      <button class="btn" type="button" onclick="window.open('../../assets/projects/CVP2.pdf')">Phase 2 Document <i class="bi bi-clipboard"></i></button>
+                      <button class="btn" type="button" onclick="window.open('https://github.com/Anthony-Amgad/Vision_Project_Team17')">Project Repo <i class="bi bi-github"></i></button>
+                    </div>
+                    <div class="mimgcon">
+                      <iframe class="mvid" allowfullscreen src="https://drive.google.com/file/d/1rXOvd5BzwLp6wOIZyeJ81OScdZb66bsj/preview" allow="autoplay"></iframe>
+                    </div>  
+                    <div class="logos">
+                      <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> 
+                      <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
+                      <a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/> </a>
+                    </div>              
+                </div>
+              </div>
+
+
+              <div class="card" *ngIf="['Any','Python','AWS','Bootstrap','HTML','CSS', 'JavaScript'
+            , 'SQL'].includes(selected)">
+                <div class="info">
+                    
+                    <h3 class="title">Charity Management System</h3>
+                    <h5 class="subtitle">Dec 2022 - Jan 2023</h5>
+                    
+                    <div class="divcont">
+                      <ul>
+                        <li>Used Django Framework to have a python backend ready to go</li>
+                        <li>Utilized Amazon RDS to host the SQL tables needed</li>
+                      </ul>
+                    </div>
+                    <div class="mimgcon">
+                      <img class="mimg" src="../../assets/projects/charch.png" onclick="window.open('../../assets/projects/charch.png')">
+                    </div> 
+                    <div class="logos">
+                      <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a>
+                      <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> 
+                      <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <br>
+                      <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> 
+                      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> 
+                      <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <br>
+                      <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
+
+                    </div>               
+                </div>
+              </div>
+
+              <div class="card" *ngIf="['Any','Python','Scikit-learn'].includes(selected)">
+                <div class="info">
+                    
+                    <h3 class="title">Encoded Face Detection and Digit Classification Using Machine Learning</h3>
+                    <h5 class="subtitle">Nov 2022 - Dec 2022</h5>
+                    
+                    <div class="divcont">
+                      <button class="btn" type="button" onclick="window.open('../../assets/projects/mldoc.pdf')">Project Document <i class="bi bi-clipboard"></i></button>
+                    </div> 
+                    <div class="logos">
+                      <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
+                      <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> 
+                    </div>            
+                </div>
+              </div>
+
+
+              <div class="card" *ngIf="['Any','C'].includes(selected)">
+                <div class="info">
+                    
+                    <h3 class="title">Tiva-C Calculator, Timer, and Stopwatch</h3>
+                    <h5 class="subtitle">Nov 2022 - Dec 2022</h5>
+                    
+                    <div class="divcont">
+                      <ul>
+                        <li>Both Keypad and LCD drivers were written from scratch</li>
+                        <li>Ability to toggle between modes to run them all simultaneously together</li>
+                      </ul>
+                      <button class="btn" type="button" onclick="window.open('../../assets/projects/Embedded.pdf')">Project Document <i class="bi bi-clipboard"></i></button>
+                      <button class="btn" type="button" onclick="window.open('https://github.com/Anthony-Amgad/Team1-CSE211-Project')">Project Repo <i class="bi bi-github"></i></button>
+                    </div> 
+                    <div class="logos">
+                      <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a>
+                    </div>            
+                </div>
+              </div>
+
+
+              <div class="card" *ngIf="['Any','Java','HTML'].includes(selected)">
+                <div class="info">
+                    
+                    <h3 class="title">Football Rankings Web Scraping App</h3>
+                    <h5 class="subtitle">May 2022 - June 2022</h5>
+                    
+                    <div class="divcont">
+                      <ul>
+                        <li>Created the Desktop App using JavaFX</li>
+                        <li>Tested the App using Junit, Testfx, and Awaitility</li>
+                      </ul>
+                      <button class="btn" type="button" onclick="window.open('../../assets/projects/testing.pdf')">Project Document <i class="bi bi-clipboard"></i></button>
+                      <button class="btn" type="button" onclick="window.open('https://github.com/youssefg7/CSE338Project')">Project Repo <i class="bi bi-github"></i></button>
+                    </div>  
+                    <div class="logos">
+                      <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> 
+                      <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> 
+                    </div>           
+                </div>
+              </div>
+
+              <div class="card" *ngIf="['Any','Python','QT','HTML','CSS','JavaScript'].includes(selected)">
+                <div class="info">
+                    
+                    <h3 class="title">Graph Search Algorithms Visualizer</h3>
+                    <h5 class="subtitle">April 2022 - May 2022</h5>
+                    
+                    <div class="divcont">
+                      <ul>
+                        <li>Visualized BFS, DFS, Iterative Deepening DFS, Uniform-cost, Greedy, and A* Search Algorithms</li>
+                        <li>Allowed user to input his own desired graph</li>
+                      </ul>
+                      <button class="btn" type="button" onclick="window.open('../../assets/projects/AI.pdf')">Project Document <i class="bi bi-clipboard"></i></button>
+                      <button class="btn" type="button" onclick="window.open('https://github.com/Anthony-Amgad/CSE472-Project')">Project Repo <i class="bi bi-github"></i></button>
+                    </div> 
+                    <div class="logos">
+                      <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
+                      <a href="https://www.qt.io/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg" alt="qt" width="40" height="40"/> </a> 
+                      <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <br>
+                      <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> 
+                      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> 
+                    </div>            
+                </div>
+              </div>
+
+
+              <div class="card" *ngIf="['Any','Python','QT','HTML','CSS','JavaScript'].includes(selected)">
+                <div class="info">
+                    
+                    <h3 class="title">Visualizer of Compiler Process</h3>
+                    <h5 class="subtitle">April 2022 - May 2022</h5>
+                    
+                    <div class="divcont">
+                      <button class="btn" type="button" onclick="window.open('../../assets/projects/compilers.pdf')">Project Document <i class="bi bi-clipboard"></i></button>
+                      <button class="btn" type="button" onclick="window.open('https://github.com/youssefg7/CSE439Team3Spring22')">Project Repo <i class="bi bi-github"></i></button>
+                    </div>  
+                    <div class="logos">
+                      <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
+                      <a href="https://www.qt.io/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg" alt="qt" width="40" height="40"/> </a> 
+                      <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <br>
+                      <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> 
+                      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> 
+                    </div>           
+                </div>
+              </div>
+
+              <div class="card" *ngIf="['Any','Java'].includes(selected)">
+                <div class="info">
+                    
+                    <h3 class="title">Sorting Algorithms Complexity Comparer</h3>
+                    <h5 class="subtitle">Dec 2021 - Jan 2022</h5>
+                    
+                    <div class="divcont">
+                      <button class="btn" type="button" onclick="window.open('../../assets/projects/DS.pdf')">Project Document <i class="bi bi-clipboard"></i></button>
+                      <button class="btn" type="button" onclick="window.open('https://github.com/Anthony-Amgad/SortingAlgorithmDSProject')">Project Repo <i class="bi bi-github"></i></button>
+                    </div>   
+                    <div class="logos">
+                      <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> 
+                    </div>          
+                </div>
+              </div>
+
+              <div class="card" *ngIf="['Any','VHDL'].includes(selected)">
+                <div class="info">
+                    
+                    <h3 class="title">FPGA Traffic Light System</h3>
+                    <h5 class="subtitle">Dec 2021 - Jan 2022</h5>
+                    
+                    <div class="divcont">
+                      <button class="btn" type="button" onclick="window.open('../../assets/projects/EDA.pdf')">Project Document <i class="bi bi-clipboard"></i></button>
+                    </div>  
+                    <div class="logos">
+                      <a target="_blank" rel="noreferrer" style="margin: 0 10px 0 10px; color:darkblue;"> VHDL </a> 
+                    </div>           
+                </div>
+              </div>
+
+
+              <div class="card" *ngIf="['Any','C'].includes(selected)">
+                <div class="info">
+                    
+                    <h3 class="title">Minix3 & XV6 Modifying</h3>
+                    <h5 class="subtitle">Nov 2021 - Jan 2022</h5>
+                    
+                    <div class="divcont">
+                      <ul>
+                        <li>Altered and built Minix3 to use different CPU scheduling algorithms as well as extents with different sizes</li>
+                        <li>Altered and built XV6 to use a different paging structure as well as different page replacement algorithms</li>
+                      </ul>
+                      <button class="btn" type="button" onclick="window.open('../../assets/projects/Operating Systems.pdf')">Project Document <i class="bi bi-clipboard"></i></button>
+                    </div>     
+                    <div class="logos">
+                      <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a>
+                    </div>        
+                </div>
+              </div>
+
+
+              <div class="card" *ngIf="['Any','Angular','Bootstrap','HTML','CSS','JavaScript', 'Firebase','nodejs','TypeScript'].includes(selected)">
+                <div class="info">
+                    
+                    <h3 class="title">Sports Tournament Manager</h3>
+                    <h5 class="subtitle">Nov 2021 - Dec 2021</h5>
+                    
+                    <div class="divcont">
+                      <button class="btn" type="button" onclick="window.open('../../assets/projects/ASW.pdf')">Project Document <i class="bi bi-clipboard"></i></button>
+                      <button class="btn" type="button" onclick="window.open('https://github.com/youssefg7/nazamly-blk')">Project Repo <i class="bi bi-github"></i></button>
+                    </div> 
+                    <div class="mimgcon">
+                      <img class="mimg" src="../../assets/projects/ASW.png" onclick="window.open('../../assets/projects/ASW.png')">
+                    </div>   
+                    <div class="logos">
+                      <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="40" height="40"/> </a> 
+                      <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> 
+                      <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <br>
+                      <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> 
+                      <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> 
+                      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <br>
+                      <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a>
+                      <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> 
+                    </div>          
+                </div>
+              </div>
+
+
+              <div class="card" *ngIf="['Any','VHDL'].includes(selected)">
+                <div class="info">
+                    
+                    <h3 class="title">VHDL ALU and Register File</h3>
+                    <h5 class="subtitle">May 2021 - June 2021</h5>
+                    <div class="logos">
+                      <a target="_blank" rel="noreferrer" style="margin: 0 10px 0 10px; color:darkblue;"> VHDL </a> 
+                    </div>           
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div> 
+        <div align="center"><button class="btn clkbtn" type="button" routerLink="/experience">Experience</button> <button class="btn clkbtn" type="button" routerLink="/about">About</button><button class="btn clkbtn" type="button" routerLink="/favourites"><i class="bi bi-clipboard-heart-fill"></i></button></div>
+        <br>
+</body>
+        
+

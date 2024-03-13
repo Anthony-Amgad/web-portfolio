@@ -1,0 +1,81 @@
+<html lang="en" style="background-color: #CBC3E3;">
+    <head>
+        <meta charset="UTF-8"/>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"/> -->
+    </head>
+    <body>
+    <div id="scenediv"></div>
+    <div id="loading" class="content">
+        <div style="height: 30%;">
+            <img src="assets/loading.gif"/>
+        </div>
+    </div>
+    <div id="mainscreen" hidden="true">
+    <button class="btn cornerleft" type="button" (click)="openModal()"><i class="bi bi-badge-cc-fill"></i></button>
+    <button class="btn cornerbtn" type="button" (click)="onPage('favourites')"><i class="bi bi-clipboard-heart-fill"></i></button>
+    <div id="centerbody">
+        <div class="content"><h1 class="text_shadows">Anthony Amgad</h1></div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="content"><button class="btn" type="button" (click)="onPage('about')">About</button></div>
+                </div>
+                <div class="col">
+                    <div class="content"><button class="btn" type="button" (click)="onPage('experience')">Experience</button></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="content"><button class="btn" type="button" (click)="onPage('projects')">Projects</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottom"><h6>Portfolio<br>Explore the Enviroment</h6></div>
+    </div>    
+</body>
+
+
+</html>
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayM, 'opacity':opacityM}">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+        <div style="background-color: #CBC3E3;" class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">3D Models Creators</h4>
+                <button type="button" class="close mod" aria-label="Close" (click)="onCloseHandled()"><span
+                        aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <p>It is important to note that none of the 3D models were created by me and are under Creative Commons Attribution License. I'd like to thank all of the models' creators respectively <3</p>
+                <div class="contrib">
+                    <a href="https://skfb.ly/ovsoC">9A Films / Nihar Arora | Iron-Man Arc Reactor</a><br>
+                    <a href="https://skfb.ly/YupG">Zul Hernández | Batarang</a><br>
+                    <a href="https://skfb.ly/osOv7">Klasy | Cassette Tape</a><br>
+                    <a href="https://skfb.ly/oLFnE">LouisHackney | CD Player</a><br>
+                    <a href="https://skfb.ly/oBSpJ">Dumb Yet Creative | Chamber Card</a><br>
+                    <a href="https://skfb.ly/6VuvD">Berk Gedik | Laptop</a><br>
+                    <a href="https://skfb.ly/oDQ7z">draakon_4d | Desk</a><br>
+                    <a href="https://skfb.ly/6B8H8">Harry Heck | Sibyl Dominator</a><br>
+                    <a href="https://skfb.ly/6Zo9z">Constantine | Headphones</a><br>
+                    <a href="https://skfb.ly/oBnTC">RΔXΔR | Headphone stand</a><br>
+                    <a href="https://skfb.ly/oFLUy">Josevan Danusastra | Persona Joker Mask</a><br>
+                    <a href="https://skfb.ly/o9PoA">LLIypuk | Khonsu Skull</a><br>
+                    <a href="https://skfb.ly/orQHW">Felix Yadomi | Mouse</a><br>
+                    <a href="https://skfb.ly/6YDFF">Monhoo | Naruto</a><br>
+                    <a href="https://skfb.ly/6VGPD">Niekjes10 | Pewdiepie Chair</a><br>
+                    <a href="https://skfb.ly/orFM9">Raghav Gupta | Pikachu</a><br>
+                    <a href="https://skfb.ly/oy88W">VibaPop | Sans</a><br>
+                    <a href="https://skfb.ly/6AEGA">jovankastrol | Slifer the Sky Dragon</a><br>
+                    <a href="https://skfb.ly/osLIQ">KhangDuyNguyen189 | Superior Spiderman</a><br>
+                    <a href="https://skfb.ly/6YAV9">Astrien | Anti-Titan Sword</a><br>
+                    <a href="https://www.microsoft.com/en-us/garage/wall-of-fame/3d-models-in-office/">Microsoft | Astronaut & Minecraft Treehouse & Zap Sign</a><br>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default mod" (click)="onCloseHandled()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
