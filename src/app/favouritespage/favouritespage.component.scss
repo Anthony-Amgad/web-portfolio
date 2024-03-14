@@ -4,6 +4,13 @@ body {
     background: $color-bg;
     background-image: url(../../assets/bgfav.png);
     color: whitesmoke;
+    display: none;
+}
+
+#loading{
+  height: 100vh;
+  background-color: white;
+  opacity: 100%;
 }
 
 #mid{
