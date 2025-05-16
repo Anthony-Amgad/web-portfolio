@@ -1,9 +1,9 @@
-$color-primary: #BF40BF;
-$color-secondary: #E0B0FF;
-$color-tertiary: #CF9FFF;
-$color-quaternary: #9F2B68;
-$color-quinary: #CBC3E3;
-$color-bg: #eff8e2;
+$color-primary: #8E2BAF;
+$color-secondary: #4B256F;
+$color-tertiary: #A974D1;
+$color-quaternary: #AFA0CD;
+$color-quinary: #7A1F50;
+$color-bg: #EFF8E2;
 
 .text_shadows {
     text-shadow: 3px 3px 0 $color-secondary, 6px 6px 0 $color-tertiary,
@@ -161,7 +161,7 @@ $color-bg: #eff8e2;
   }
   
   body {
-    background: #555;
+    background: #CCC;
     background-image: url(../../assets/bgdoodle.png);
   }
   .tcont{
@@ -257,20 +257,24 @@ $color-bg: #eff8e2;
     position: relative;
   }
   
-  .rightlogo{
+  .card:nth-child(odd) > .info > .logo{
     position: absolute;
     align-self:flex-end;
-  }
-  .leftlogo{
-    position: absolute;
-    align-self:flex-start;
+    margin-right: 20px;
   }
   
-  .rightbtn{
+  .card:nth-child(even) > .info > .logo{
+    position: absolute;
+    align-self:flex-start;
+    margin-left: 20px;
+  }
+  
+  .card:nth-child(odd) > .info > .btn{
     position: absolute;
     align-self:flex-end;
   }
-  .leftbtn{
+  
+  .card:nth-child(even) > .info > .btn{
     position: absolute;
     align-self:flex-start;
   }
@@ -281,7 +285,7 @@ $color-bg: #eff8e2;
     position: absolute;
     width: 15px;
     height: 15px;
-    background: #555;
+    background: #CCC;
     border-radius: 999px;
     border: 3px solid $color-primary;
   }
@@ -305,18 +309,37 @@ $color-bg: #eff8e2;
     right: -45px;
   }
 
+  .card:nth-child(even) > .info > .divcont {
+    // align-self:flex-start;
+    text-align: right;
+  }
+
+    .card:nth-child(even) > .info > .divimgs {
+    // align-self:flex-start;
+    align-self: flex-start;
+  }
+
+  ul{
+    font-weight: bold;
+  }
+
+  .card:nth-child(even) > .info > .divcont > ul {
+    // align-self:flex-start;
+    direction: rtl;    
+  }
+
   .btn{
     // width: fit-content !important;
     padding: 0;
   }
 
   .modal{
-    background-color: #555;
+    background-color: #CCC;
     background-image: url(../../assets/bgdoodle.png);
   }
 
   @media all and (max-width: 801px) {
-    .leftlogo, .rightlogo{
+    .logo{
       position: relative;
       align-self: center;
       margin: 10px 0 10px 0;

@@ -2,7 +2,7 @@
   <link rel="stylesheet" href="./assets/fontawesome/css/fontawesome.css">
 </head> -->
 <body>
-    <br>
+    <p style="margin-left: 10px; font-style: italic;">Last Updated: 16th of May 2025</p>
     <h1 class="text_shadows">Projects 🔬</h1>
     
     <div align="center">
@@ -49,7 +49,7 @@
                     
                     <h3 class="title">Football Players Tracking from Multiple Cameras using Deep Learning - Graduation Project</h3>
                     <h4 class="subtitle">Sponsored by KoraStats</h4>
-                    <h5 class="subtitle">Sep 2023 - Present</h5>
+                    <h5 class="subtitle">Sep 2023 - Jul 2024</h5>
                     <div class="divcont">
                       <ul>
                         <li>Five module system that tracks football players in a match across 2-3 cameras using computer vision and deep learning</li>
@@ -57,6 +57,7 @@
                         <li>Integrated the 5 modules into a multithreaded system that efficiently manages memory and CPU resources</li>
                       </ul>
                       <button class="btn" type="button" onclick="window.open('./assets/projects/Thesis1.pdf')">Thesis-1 Document <i class="bi bi-clipboard"></i></button>
+                      <button class="btn" type="button" onclick="window.open('./assets/projects/Thesis2.pdf')">Thesis-2 Document <i class="bi bi-clipboard"></i></button>
                     </div>
                     <div class="logos">
                       <!-- <a href="https://korastats.com/site/"><img src="https://korastats.com/site/themes/dashcore/assets/img/__logo/korastats.svg" height="40px"></a> <br> -->
@@ -72,6 +73,52 @@
                 </div>
               </div>
 
+
+              <div class="card" *ngIf="['Any','Python','TensorFlow','Pandas','Scikit-learn','Seaborn', 'QT'].includes(selected)">
+                <div class="info">
+                    
+                    <h3 class="title">Next Word Predictor</h3>
+                    <h5 class="subtitle">Jun 2024</h5>
+                    <div class="divcont">
+                      <ul>
+                        <li>Developed a next-word prediction model using deep learning architectures (CNNs, LSTMs, and GRUs), with LSTMs and GRUs outperforming CNNs due to their strength in handling sequential data</li>
+                        <li>Optimized input sequence length, reducing it from 25 to 5 words to balance prediction accuracy with computational efficiency</li>
+                        <li>Performed extensive text preprocessing, including tokenization and embedding, to prepare the data for effective training of neural network models</li>
+                      </ul>
+                      <button class="btn" type="button" onclick="window.open('./assets/projects/NWP.pdf')">Project Document <i class="bi bi-clipboard"></i></button>
+                      <button class="btn" type="button" onclick="window.open('https://github.com/Anthony-Amgad/Next-Word-Predictor')">Project Repo <i class="bi bi-github"></i></button>
+                    </div>
+                    <div class="logos">
+                      <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
+                      <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a>
+                      <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <br>
+                      <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a>
+                      <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/> </a> 
+                      <a href="https://www.qt.io/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg" alt="qt" width="40" height="40"/> </a> 
+                    </div>             
+                </div>
+              </div>
+
+              <div class="card" *ngIf="['Any','Python','QT'].includes(selected)">
+                <div class="info">
+                    
+                    <h3 class="title">Genetic Algorithm Implementation of Constant Area Coding (CAC) Compression</h3>
+                    <h5 class="subtitle">Jun 2024</h5>
+                    <div class="divcont">
+                      <ul>
+                        <li>Applied Context-Adaptive Coding (CAC) for compressing binary images, focusing on how kernel size affects compression efficiency and image quality</li>
+                        <li>Used a Genetic Algorithm (GA) to optimize the kernel size, navigating the large search space and adapting to image dataset characteristics</li>
+                        <li>Aimed to maximize compression performance by finding a balance between high compression rates and preserved image fidelity through iterative GA tuning</li>
+                      </ul>
+                      <button class="btn" type="button" onclick="window.open('./assets/projects/GACAC.pdf')">Project Document <i class="bi bi-clipboard"></i></button>
+                      <button class="btn" type="button" onclick="window.open('https://github.com/Anthony-Amgad/Genetic-Algorithm-CAC')">Project Repo <i class="bi bi-github"></i></button>
+                    </div>
+                    <div class="logos">
+                      <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
+                      <a href="https://www.qt.io/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg" alt="qt" width="40" height="40"/> </a> 
+                    </div>          
+                </div>
+              </div>
 
               <div class="card" *ngIf="['Any','Angular','Bootstrap','HTML','CSS','JavaScript','nodejs','TypeScript'].includes(selected)">
                 <div class="info">
